@@ -1,12 +1,12 @@
 package LESSON_5;
 
 public class Employee {
-    String name;
-    String position;
-    String mail;
-    String phone;
-    int salary;
-    int age;
+   private String name;
+   private String position;
+   private String mail;
+   private String phone;
+   private int salary;
+   private int age;
 
     public Employee(String name, String position, String mail, String phone, int salary, int age) {
         this.name = name;
@@ -18,7 +18,10 @@ public class Employee {
     }
 
     public void info(){
-        System.out.printf("Team member %s\nposition %s\nemail/pfone number %s / %s\nsalary %d\nage %d", name,position,mail,phone,salary,age);
+        System.out.printf("Team member %s\nposition: %s\nemail/pfone number: %s/%s\nsalary: %d\nage: %d\n\n", name,position,mail,phone,salary,age);
     }
 
+    public int getAge() {
+        return age;
+    }
 }
